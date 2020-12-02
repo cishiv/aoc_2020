@@ -36,8 +36,6 @@ fn main() -> io::Result<()> {
         if c >= r_0 && c <= r_1 {
             count = count + 1;
         }
-        
-
     }
 
     println!("Part 1 {}", count);
