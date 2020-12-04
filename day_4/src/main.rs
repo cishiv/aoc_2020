@@ -61,6 +61,8 @@ fn main() -> io::Result<()> {
 // }
 
 
+// a bit of borrowed code from https://github.com/ExpoSeed/advent_of_code_2020/blob/main/src/day4.rs
+// i really was too tired to write the validators :(
 fn validators(field: &str, value: &str) -> bool {
     match field {
         "byr" => matches!(value.parse::<usize>(), Ok(number) if (1920..=2002).contains(&number)),
