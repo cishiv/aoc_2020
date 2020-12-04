@@ -29,7 +29,6 @@ fn main() -> io::Result<()> {
                                 })
                                 .into_iter()
                                 .collect();
-                                println!("{:?}", fields);
                                 let mut t = true;
                                 for f in req.iter() {
                                     if fields.contains_key(f) {
